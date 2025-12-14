@@ -63,21 +63,21 @@ http://127.0.0.1:5000/
 - Subscribe to fitness plans
 
 ## 🏋️ Trainer
--Create fitness plans
--Manage plans via dashboard
+- Create fitness plans
+- Manage plans via dashboard
 
 ## 🔒 System
--Role-based authentication
--Restricted access to subscribed content
+- Role-based authentication
+- Restricted access to subscribed content
 
 # 🛠️ Tech Stack
--Frontend: HTML, CSS
--Backend: Flask (Python)
--Database: MySQL
--Authentication: Flask-Login
+- Frontend: HTML, CSS
+- Backend: Flask (Python)
+- Database: MySQL
+- Authentication: Flask-Login
 
 # 🚀 Future Enhancements
--Payment gateway integration
--Workout progress tracking
--Plan ratings and reviews
+- Payment gateway integration
+- Workout progress tracking
+- Plan ratings and reviews
 
