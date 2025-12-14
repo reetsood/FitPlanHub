@@ -1,4 +1,3 @@
-```md
 # 🏋️ FitPlanHub
 
 FitPlanHub is a full-stack fitness web application where trainers create fitness plans and users can explore, follow trainers, and subscribe to plans.
