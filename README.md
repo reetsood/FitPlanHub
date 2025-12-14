@@ -14,86 +14,69 @@ FitPlanHub is a full-stack fitness web application where trainers create fitness
 ---
 
 ### 1️⃣ Clone the Repository
-```bash
+```
 git clone https://github.com/your-username/FitPlanHub.git
 cd FitPlanHub
+```
 2️⃣ Create and Activate Virtual Environment
-bash
-Copy code
+```
 python -m venv venv
+```
 Windows
-
-bash
-Copy code
+```
 venv\Scripts\activate
+```
 Mac/Linux
-
-bash
-Copy code
+```
 source venv/bin/activate
+```
 3️⃣ Install Dependencies
-bash
-Copy code
+```
 pip install flask flask-login mysql-connector-python
+```
 4️⃣ Database Setup (MySQL)
-Create database:
-
-sql
-Copy code
+Create the database in SQL:
+```
 CREATE DATABASE fitplanhub;
-Update credentials in app.py:
-
-python
-Copy code
+```
+Update database credentials in app.py:
+```
 host="localhost"
 user="your_mysql_username"
 password="your_mysql_password"
 database="fitplanhub"
+```
 5️⃣ Run the Application
-bash
-Copy code
+```
 python app.py
-Open browser:
-
-cpp
-Copy code
+```
+Open in browser:
+```
 http://127.0.0.1:5000/
-✨ Features Implemented
-User
-Signup and login
+```
+# ✨ Features Implemented
+## 👤 User
+-Signup and login
+-Browse fitness plans
+-Follow and unfollow trainers
+-Subscribe to fitness plans
 
-Browse fitness plans
+## 🏋️ Trainer
+-Create fitness plans
+-Manage plans via dashboard
 
-Follow trainers
+## 🔒 System
+-Role-based authentication
+-Restricted access to subscribed content
 
-Subscribe to plans
+# 🛠️ Tech Stack
+-Frontend: HTML, CSS
+-Backend: Flask (Python)
+-Database: MySQL
+-Authentication: Flask-Login
 
-Trainer
-Create fitness plans
-
-Trainer dashboard
-
-System
-Role-based authentication
-
-Secure access control
-
-🛠️ Tech Stack
-Frontend: HTML, CSS
-
-Backend: Flask (Python)
-
-Database: MySQL
-
-Authentication: Flask-Login
-
-🚀 Future Enhancements
-Payment integration
-
-Progress tracking
-
-Reviews and ratings
-
-yaml
-Copy code
+# 🚀 Future Enhancements
+-Payment gateway integration
+-Workout progress tracking
+-Plan ratings and reviews
 
