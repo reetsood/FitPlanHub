@@ -1,121 +1,100 @@
-#🏋️FitPlanHub
+```md
+# 🏋️ FitPlanHub
 
-FitPlanHub is a full-stack fitness web application where trainers can create fitness plans and users can explore, follow trainers, and subscribe to plans to access detailed workout information.
+FitPlanHub is a full-stack fitness web application where trainers create fitness plans and users can explore, follow trainers, and subscribe to plans.
 
-This project was developed as part of a placement assessment to demonstrate backend development, database integration, authentication, and frontend UI design.
+---
 
-#🔧Project Setup
-Prerequisites
+## 🔧 Project Setup
 
-Make sure you have the following installed:
+### Prerequisites
+- Python 3.x
+- MySQL
+- Git
 
-Python 3.x
+---
 
-MySQL
-
-Git
-
-1️⃣ Clone the Repository
-'''bash
-git clone https://github.com/reetsood/FitPlanHub.git
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/your-username/FitPlanHub.git
 cd FitPlanHub
-
 2️⃣ Create and Activate Virtual Environment
+bash
+Copy code
 python -m venv venv
-
-
 Windows
 
+bash
+Copy code
 venv\Scripts\activate
-
-
 Mac/Linux
 
+bash
+Copy code
 source venv/bin/activate
-
 3️⃣ Install Dependencies
+bash
+Copy code
 pip install flask flask-login mysql-connector-python
-
 4️⃣ Database Setup (MySQL)
+Create database:
 
-Create a MySQL database:
-
+sql
+Copy code
 CREATE DATABASE fitplanhub;
+Update credentials in app.py:
 
-
-Update database credentials in the Flask app:
-
+python
+Copy code
 host="localhost"
 user="your_mysql_username"
 password="your_mysql_password"
 database="fitplanhub"
-
-
-Run the SQL tables provided in the project (users, plans, subscriptions, followers).
-
 5️⃣ Run the Application
+bash
+Copy code
 python app.py
+Open browser:
 
-
-Open your browser and visit:
-
+cpp
+Copy code
 http://127.0.0.1:5000/
-
 ✨ Features Implemented
-User Features
-
-User registration and login
+User
+Signup and login
 
 Browse fitness plans
 
-Follow and unfollow trainers
+Follow trainers
 
-Subscribe to fitness plans
+Subscribe to plans
 
-View subscribed plans in personal feed
-
-Trainer Features
-
-Trainer registration and login
-
+Trainer
 Create fitness plans
 
-Manage plans through trainer dashboard
+Trainer dashboard
 
-System Features
+System
+Role-based authentication
 
-Role-based authentication (User / Trainer)
+Secure access control
 
-Restricted access to premium content
-
-Secure login and logout using Flask-Login
-
-🛠️ Technologies Used
-
+🛠️ Tech Stack
 Frontend: HTML, CSS
 
-Backend: Python (Flask)
+Backend: Flask (Python)
 
 Database: MySQL
 
 Authentication: Flask-Login
 
-Templating: Jinja2
-
-📌 Notes
-
-No frontend frameworks were used.
-
-UI was custom styled using CSS.
-
-Project follows a simple and readable structure.
-
 🚀 Future Enhancements
+Payment integration
 
-Payment gateway integration
+Progress tracking
 
-Workout progress tracking
+Reviews and ratings
 
-Plan ratings and reviews
+yaml
+Copy code
 
-Mobile-responsive design improvements
