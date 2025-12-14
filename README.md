@@ -102,3 +102,10 @@ Each table is designed to represent real-world relationships between users, trai
 - Workout progress tracking
 - Plan ratings and reviews
 
+# Project Screenshots
+<img width="1912" height="1012" alt="image" src="https://github.com/user-attachments/assets/36b486b0-81de-4b6f-88b5-43cf2a0fcca5" />
+<img width="1917" height="1010" alt="image" src="https://github.com/user-attachments/assets/018ffc91-577d-4916-bed1-99b04dfcd55f" />
+<img width="1915" height="1010" alt="image" src="https://github.com/user-attachments/assets/aff473de-200b-4b5b-8493-b2babfde28e5" />
+
+
+
