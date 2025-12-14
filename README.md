@@ -1,9 +1,8 @@
-# 🏋️ FitPlanHub
+# 🏋️ FitPlanHub - Fitness Plans
 
-FitPlanHub is a full-stack fitness web application where trainers create fitness plans and users can explore, follow trainers, and subscribe to plans.Trainers can create workout plans, and users can explore trainers, follow them, and subscribe to plans to access detailed fitness guidance.
-This project focuses on clean functionality, role-based access, and a user-friendly interface.
+FitPlanHub is a full-stack fitness web application where trainers create fitness plans and users can explore them, follow trainers, and subscribe to plans to access detailed fitness guidance.
+This project focuses on clean functionality, role based access, and a user-friendly interface.
 
----
 
 ## 🔧 Project Setup
 
@@ -12,7 +11,6 @@ This project focuses on clean functionality, role-based access, and a user-frien
 - MySQL
 - Git
 
----
 
 ### 1️⃣ Clone the Repository
 ```
