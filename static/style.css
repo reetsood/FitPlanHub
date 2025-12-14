@@ -1,0 +1,171 @@
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================= BODY & BACKGROUND ================= */
+body {
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.55),
+            rgba(0,0,0,0.55)
+        ),
+        url("fitness_img.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #f9fafb;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+/* ================= BRAND HEADER ================= */
+h1 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    color: #facc15; /* fitness yellow */
+}
+
+h1 span {
+    color: #22c55e; /* green accent */
+}
+
+/* ================= WELCOME TEXT ================= */
+.welcome-text {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: #e5e7eb;
+}
+
+.welcome-text a {
+    color: #22c55e;
+    font-weight: 600;
+}
+
+/* ================= SECTION HEADINGS ================= */
+h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #facc15;
+}
+
+/* ================= BIG CARDS ================= */
+.card {
+    background: rgba(17, 24, 39, 0.92);
+    border-radius: 20px;
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 520px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 30px 70px rgba(0,0,0,0.7);
+}
+
+.card h3, .card h4 {
+    font-size: 26px;
+    margin-bottom: 12px;
+    color: #facc15;
+}
+
+.card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #d1d5db;
+}
+
+/* ================= ACTION LINKS ================= */
+.card a {
+    display: inline-block;
+    margin-top: 14px;
+    margin-right: 12px;
+    padding: 10px 18px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    color: #022c22;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.card a:hover {
+    transform: scale(1.05);
+}
+
+/* ================= FORMS ================= */
+form {
+    background: rgba(17, 24, 39, 0.95);
+    max-width: 520px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 22px;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.6);
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    border: none;
+    background: #111827;
+    color: #f9fafb;
+    font-size: 15px;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: 2px solid #22c55e;
+}
+
+/* ================= BUTTONS ================= */
+button {
+    width: 100%;
+    padding: 14px;
+    font-size: 17px;
+    font-weight: 700;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(135deg, #facc15, #eab308);
+    color: #422006;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+}
+
+/* ================= LINKS OUTSIDE CARDS ================= */
+p {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 15px;
+}
+
+p a {
+    color: #22c55e;
+    font-weight: 600;
+}
+
+
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 38px;
+    }
+    .card {
+        padding: 24px;
+    }
+}
+

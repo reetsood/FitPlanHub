@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trainer Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h2>Trainer Dashboard</h2>
+
+<a href="/trainer/create">Create New Plan</a> |
+<a href="/logout">Logout</a>
+
+<hr>
+
+{% for plan in plans %}
+    <div class="card">
+        <h3>{{ plan.title }}</h3>
+        <p>Price: ₹{{ plan.price }}</p>
+        <p>Duration: {{ plan.duration }}</p>
+    </div>
+{% endfor %}
+
+</body>
+</html>

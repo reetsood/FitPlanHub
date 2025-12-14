@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FitPlanHub</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h1>FitPlanHub – Fitness Plans</h1>
+
+{% if current_user.is_authenticated %}
+    <p>
+        Welcome, {{ current_user.name }} |
+        <a href="/logout">Logout</a>
+
+        {% if current_user.role == "trainer" %}
+            | <a href="/trainer/dashboard">Trainer Dashboard</a>
+        {% else %}
+            | <a href="/feed">My Feed</a>
+        {% endif %}
+    </p>
+{% else %}
+
+    <p>
+        <a href="/login">Login</a> |
+        <a href="/signup">Signup</a>
+    </p>
+{% endif %}
+
+{% for plan in plans %}
+    <div class="card">
+        <h3>{{ plan.title }}</h3>
+        <p><strong>Trainer: {{ plan.trainer }}</strong></p>
+        <p><strong>Price: ₹{{ plan.price }}</strong></p>
+        {% if current_user.is_authenticated and current_user.role == 'user' %}
+              {% if plan.trainer_following %}
+                    <a href="{{ url_for('unfollow', trainer_id=plan.trainer_id) }}">Unfollow</a>
+              {% else %}
+                    <a href="{{ url_for('follow', trainer_id=plan.trainer_id) }}">Follow</a>
+              {% endif %}
+        {% endif %}
+
+
+        <a href="/plan/{{ plan.id }}">View Plan</a>
+    </div>
+{% endfor %}
+
+
+
+</body>
+</html>
+

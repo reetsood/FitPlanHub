@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Feed</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h2>Your Feed</h2>
+
+<a href="/logout">Logout</a>
+
+<hr>
+
+{% if plans %}
+    {% for plan in plans %}
+        <div class="card">
+            <h3>{{ plan.title }}</h3>
+            <p>Price: ₹{{ plan.price }}</p>
+            <p>Duration: {{ plan.duration }}</p>
+            <a href="/plan/{{ plan.id }}">View</a>
+        </div>
+    {% endfor %}
+{% else %}
+    <p>You are not following any trainers yet.</p>
+{% endif %}
+
+</body>
+</html>

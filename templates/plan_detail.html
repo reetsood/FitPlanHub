@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Plan Details</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h2>{{ plan.title }}</h2>
+
+{% if subscribed %}
+    <p><strong>Description:</strong> {{ plan.description }}</p>
+    <p><strong>Duration:</strong> {{ plan.duration }}</p>
+{% else %}
+    <p><strong>Price:</strong> ₹{{ plan.price }}</p>
+    <p>Subscribe to unlock full plan details.</p>
+    <a href="/subscribe/{{ plan.id }}">Subscribe</a>
+{% endif %}
+
+<br>
+<a href="/">Back</a>
+
+</body>
+</html>

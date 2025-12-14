@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ trainer.name }} | Trainer Profile</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h2>Trainer: {{ trainer.name }}</h2>
+<p>Email: {{ trainer.email }}</p>
+<p>Total Plans: {{ plans|length }}</p>
+
+{% if current_user.is_authenticated and current_user.role == 'user' %}
+    {% if following %}
+        <a href="/unfollow/{{ trainer.id }}">Unfollow</a>
+    {% else %}
+        <a href="/follow/{{ trainer.id }}">Follow</a>
+    {% endif %}
+{% endif %}
+
+<hr>
+
+<h3>Plans by {{ trainer.name }}</h3>
+
+{% if plans %}
+    {% for plan in plans %}
+        <div class="card">
+            <h4>{{ plan.title }}</h4>
+            <p>Price: ₹{{ plan.price }}</p>
+            <p>Duration: {{ plan.duration }}</p>
+
+            {% if current_user.is_authenticated %}
+                {% if current_user.role == 'user' %}
+                    {% set subscribed = False %}
+                    {% for s in subscriptions %}
+                        {% if s['plan_id'] == plan.id %}
+                            {% set subscribed = True %}
+                        {% endif %}
+                    {% endfor %}
+
+                    {% if plan.id in subscribed_plan_ids %}
+                        <p><strong>Subscribed</strong></p>
+                        <a href="/plan/{{ plan.id }}">View Plan</a>
+                    {% else %}
+                        <a href="/subscribe/{{ plan.id }}">Subscribe</a>
+                    {% endif %}
+                {% else %}
+                    <p><em>Only users can subscribe</em></p>
+                {% endif %}
+            {% else %}
+                <p><a href="/login">Login to Subscribe</a></p>
+            {% endif %}
+        </div>
+    {% endfor %}
+{% else %}
+    <p>This trainer has not created any plans yet.</p>
+{% endif %}
+
+<br>
+<a href="/">Back to Home</a>
+
+</body>
+</html>
