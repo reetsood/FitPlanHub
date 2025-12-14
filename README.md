@@ -56,6 +56,27 @@ Open in browser:
 http://127.0.0.1:5000/
 ```
 # ✨ Features Implemented
+
+## Database Design
+Tables used in the project:
+- `users`
+- `fitness_plans`
+- `subscriptions`
+- `follows`
+
+Each table is designed to represent real-world relationships between users, trainers, and fitness plans.
+
+## API / Routes Overview
+
+- `/signup` – Register user or trainer
+- `/login` – User login
+- `/logout` – Logout
+- `/trainer/create` – Create fitness plan
+- `/plan/<id>` – View plan details
+- `/subscribe/<id>` – Subscribe to plan
+- `/follow/<trainer_id>` – Follow trainer
+- `/feed` – View followed trainers' plans
+
 ## 👤 User
 - Signup and login
 - Browse fitness plans
