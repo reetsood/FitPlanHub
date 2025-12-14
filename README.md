@@ -57,10 +57,10 @@ http://127.0.0.1:5000/
 ```
 # ✨ Features Implemented
 ## 👤 User
--Signup and login
--Browse fitness plans
--Follow and unfollow trainers
--Subscribe to fitness plans
+- Signup and login
+- Browse fitness plans
+- Follow and unfollow trainers
+- Subscribe to fitness plans
 
 ## 🏋️ Trainer
 -Create fitness plans
